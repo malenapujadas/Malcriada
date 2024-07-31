@@ -1,0 +1,322 @@
+body{
+    background-color: rgb(246, 239, 234);
+}
+/************** NAV **************/
+header{
+    display: flex;
+    flex-direction: column;
+}
+.barra{
+    padding-left: 80%;
+}
+.nav-link{
+    font-size: 14pt;
+    color: black;
+}
+.nav-link:hover{
+    color: rgba(114, 46, 74);
+}
+
+/************** MAIN **************/
+
+h2{
+    font-size: 45pt;
+    color:rgb(233, 172, 170) ;
+    text-transform: uppercase;
+    padding-left: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/* DECORACION */
+#tenedor{
+    padding-left: 90%;
+    margin-top: 50px;
+}
+#cuchillo{
+    padding-left: 90%;
+    margin-top: -300px;
+}
+#bebidas{
+    margin-top: -550px;
+}
+/* SUBTITULOS SECCIONES */
+.titulo{
+    display: flex;
+    flex-direction: row;
+}
+.titulo h3{
+    padding-left: 30%;
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-weight: bold;
+    color: rgb(114, 46, 74);
+    width: 50px;
+}
+.titulo figure {
+    padding-left: 10%;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40%;
+}
+.menu div ul li{
+    list-style: none;
+    width: 300px;
+    font-size: 14pt;
+}
+#tortas{
+    margin-top: -400px;
+}
+#salado{
+    margin-top: -150px;
+}
+article{
+    margin-bottom: 150px;
+}
+
+/************** RESERVAS **************/
+h3{
+    padding-left: 400px;
+    font-weight: 400;
+    font-size: 26pt;
+    margin-bottom: 50px;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+}
+.formulario div{
+    display: flex;
+    flex-direction: column;
+}
+.derecha{
+    padding-left: 200px;
+}
+label{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+input, select{
+    background-color: rgba(114, 46, 74, 0.589) ;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    color: white;
+}
+input[type=submit]{
+    background-color: rgba(114, 46, 74);
+    margin-left: 45%;
+    width: 120px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 5px;
+}
+input[type=submit]:hover{
+    background-color:  rgb(74, 30, 48);
+}
+
+
+
+/*************** FOOTER *******************/
+footer{
+    background-color: rgb(85, 35, 55);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: 100px;
+}
+#logo figure img{
+    margin-top: -70px;
+}
+#redes{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    
+}
+#redes a i{
+    padding-left: 20px;
+    color:rgb(233, 172, 170);
+}
+#redes a i:hover{
+    color: white;
+}
+
+#menu ul li a{
+    color: rgb(233, 172, 170);
+    text-decoration: none;
+    font-weight: bold;
+}
+#menu ul li{
+    list-style: none;
+}
+#menu ul li a:hover{
+    color: white;
+}
+#menu{
+    margin-top: 20px;
+}
+
+
+
+/*********** CSS TABLET ****************/
+@media (min-width:500px) and (max-width:960px){
+    /* NAV */
+    .barra{
+        padding-left: 90%;
+    }
+    .navbar-toggler{
+        border: none;
+        color: black;
+    }
+    span{
+        color: black;
+    }
+    .nav-link{
+        padding-left: 20px;
+    }
+    /* TITULOS */
+    h2{
+        padding-left: 8%;
+    }
+    /* DECORACION */
+    #tenedor{
+        padding-left: 80%;
+    }
+    #cuchillo{
+        padding-left: 80%;
+        margin-top: -350px;
+    }
+    #cuchara{
+        margin-top: -300px;
+    }
+    #salado{
+        margin-top: -100px;
+    }
+    /* SUBTITULOS SECCIONES */
+    .titulo h3{
+    padding-left: 10%;
+    }
+    .titulo figure {
+        padding-left: 15%;
+    }
+    .menu{
+        padding-left: 10%;
+    }
+
+    #tortas{
+        margin-top: -100px;
+    }
+    
+    /************** RESERVAS **************/
+    
+    h3{
+    padding-left: 8%;
+    }
+    .formulario{
+    margin-left: 10%;
+    }
+    input[type=submit]{
+    margin-left: 40%;
+    }
+}
+
+
+
+
+
+
+/************* CSS MOBILE ****************/
+@media (max-width:500px){
+    /* NAV */
+    .barra{
+        padding-left: 90%;
+    }
+    .navbar-toggler{
+        border: none;
+        color: black;
+    }
+    .nav-link{
+        padding-left: 20px;
+    }
+    span{
+        color: black;
+    }
+    /* TITULOS */
+    h2{
+        padding-left: 8%;
+        font-size: 28pt;
+    }
+    /* DECORACION */
+    #tenedor{
+    padding-left: 65%;
+    }
+    #cuchillo{
+    padding-left: 65%;
+    margin-top: -450px;
+    }
+    #salado{
+        margin-top: 50px;
+    }
+    #cuchara{
+        margin-top: -250px;
+        margin-left: -60px;
+    }
+    #tortas{
+        margin-top: -130px;
+    }
+    /* SUBTITULOS SECCIONES */
+    .titulo h3{
+    padding-left: 8%;
+    }
+    .menu{
+    flex-direction: column;
+    padding-left: 10%;
+    }
+    .titulo figure {
+        padding-left: 25%;
+        margin-top: -20px;
+    }
+    /************** RESERVAS **************/
+    
+    h3{
+        padding-left: 8%;
+        font-size: 22pt;
+        }
+    .formulario{
+        margin-left: 10%;
+        flex-direction: column;
+        
+    }
+    .derecha{
+        padding-left: 0;
+    }
+    input[type=submit]{
+        margin-left: 10%;
+        margin-bottom: 80px;
+    }
+    /* FOOTER */
+    #logo figure img{
+        margin-top: -30px;
+        height: 130px;
+    }
+    footer{
+        height: 100px;
+    }
+    #redes{
+        padding-top: 30px;
+    }
+
+    #menu{
+        margin-top: 0px;
+    }
+    
+    
+    
+}

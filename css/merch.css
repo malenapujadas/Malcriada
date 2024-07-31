@@ -1,0 +1,236 @@
+/************** NAV **************/
+header{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(233, 172, 170);
+    height: 800px;
+}
+.barra{
+    padding-left: 80%;
+}
+.nav-link{
+    font-size: 14pt;
+    color:white;
+}
+.nav-link:hover{
+    color: rgba(114, 46, 74);
+}
+
+/************** PRODS **************/
+
+main{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("../imgs/logo.PNG");
+    padding-bottom: 200px;
+}
+
+#merch{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    margin-top: -650px;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 10px 10px 50px rgba(120, 120, 120, 0.334);
+}
+#merch article{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+#merch article div{
+    margin: auto;
+    margin-top: 50px;
+}
+h1{
+    font-size: 45pt;
+    color:rgb(233, 172, 170) ;
+    text-transform: uppercase;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.texto{
+    font-size: 14pt;
+}
+.precio{
+    font-size: 14pt;
+    font-weight: bold;
+}
+#merch article figure img{
+    transition: transform 1s;
+}
+#merch article figure img:hover{
+    transform: scale(1.1);
+}
+
+/*************** SUSCRIPCION *******************/
+
+
+#susc{
+    margin-left: 130px;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+#susc p{
+    width: 50%;
+    font-size: 15pt;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+#form input{
+    width: 300px;
+}
+#form label{
+    font-weight: bold;
+}
+#boton{
+    background-color: rgba(114, 46, 74) ;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
+#boton a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+/*************** FOOTER *******************/
+footer{
+    background-color: rgb(85, 35, 55);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 30px;
+}
+
+#redes{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    
+}
+#redes a i{
+    padding-left: 20px;
+    color:rgb(233, 172, 170);
+}
+#redes a i:hover{
+    color: white;
+}
+
+#menu ul li a{
+    color: rgb(233, 172, 170);
+    text-decoration: none;
+    font-weight: bold;
+}
+#menu ul li{
+    list-style: none;
+}
+#menu ul li a:hover{
+    color: white;
+}
+#menu{
+    margin-top: 20px;
+}
+
+
+
+/*********** CSS TABLET ****************/
+@media (min-width:500px) and (max-width:960px){
+    /* NAV */
+    .barra{
+        padding-left: 90%;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    span{
+        color: black;
+    }
+    .nav-link{
+        padding-left: 20px;
+        color: black;
+    }
+    /* PRODS */
+    #merch{
+        width: 80%;
+    }   
+    /* SUSCRIPCION */
+    #susc{
+        margin-left: 60px;
+    }
+}
+
+
+
+
+/************* CSS MOBILE ****************/
+@media (max-width:500px){
+
+    /* NAV */
+    .barra{
+        padding-left: 80%;
+    }
+    .navbar-toggler{
+        border: none;
+    }
+    span{
+        color: black;
+    }
+    
+    .nav-link{
+        padding-left: 20px;
+        color: black;
+    }
+    /* PRODS */
+    #merch{
+    width: 80%;
+    }
+    #merch article{
+    flex-direction: column;    
+    }
+    h1{
+    font-size: 30pt;
+    padding-left: 40px;
+    }
+    /* SUSCRIPCION */
+    #susc{
+    margin-left: 30px;
+    }
+    #susc p{
+    width: 80%;
+    }
+    /* FOOTER */
+    #logo figure img{
+        margin-top: -30px;
+        height: 130px;
+    }
+    footer{
+        height: 130px;
+    }
+    #redes{
+        padding-top: 30px;
+    }
+    #menu{
+        margin-top: 0px;
+        margin-top: -20px;
+    }
+}
+
+
+
+
